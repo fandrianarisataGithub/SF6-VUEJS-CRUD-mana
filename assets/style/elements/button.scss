@@ -1,0 +1,29 @@
+.element-button{
+    border : none;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    width : 150px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s linear;
+    &.element-button-primary{
+        background-color: $orange;
+        color: $white;
+        &:hover{
+            color: $orange;
+            border : 2px solid $orange;
+            background-color: $transparent;
+        }
+    }
+    &.element-button-secondary{
+        background-color: $dark;
+        color: $white;
+        &:hover{
+            color: $dark;
+            border : 2px solid $dark;
+            background-color: $transparent;
+        }
+    }
+}

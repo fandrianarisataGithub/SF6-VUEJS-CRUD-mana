@@ -1,13 +1,11 @@
 <template>
   <div>
     <navbar />
-    <router-view />
+    <router-view></router-view>
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex';
-
-import Navbar from './Navbar';
+import Navbar from './components/Navbar.vue';
 
 export default {
   name: "App",

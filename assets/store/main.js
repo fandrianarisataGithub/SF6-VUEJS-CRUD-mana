@@ -1,7 +1,10 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import auth from './auth'
-import products from "./Products";
+import Vue from 'vue';
+
+import Vuex from 'vuex';
+
+import buildings from './building';
+import marketings from './marketing';
+import members from './members';
 
 Vue.use(Vuex)
 
@@ -22,6 +25,8 @@ export default new Vuex.Store({
   actions:{
   },
   modules:{
-    auth, products
+    buildings,
+    marketings,
+    members,
   }
 })
