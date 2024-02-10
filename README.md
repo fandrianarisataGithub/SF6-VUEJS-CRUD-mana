@@ -16,6 +16,14 @@ composer install
 
 yarn 
 
+### Config .env
+
+Copy .env-copy's content to your .env file
+
+php bin/console doctrine:database:create # To create the mysql ddb
+
+### Launch server
+
 yarn watch / yarn dev
 
 php -S localhost:8000 -t public
